@@ -11,7 +11,7 @@ params = {
 }
 
 def validate_construction_date(date_of_construction):
-    year_of_costruction = str(date_of_construction).split(' ')[1] #(IV квартал 2022)
+    year_of_costruction = str(date_of_construction).split(' ')[1] #(IV квартал 2022)g
     if int(year_of_costruction) >= params['minimal_year_of_building_finished']:
         return True    
     return False
